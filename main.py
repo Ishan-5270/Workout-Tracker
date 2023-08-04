@@ -4,6 +4,7 @@ from datetime import datetime as dt
 PIXELA_ENDPOINT = "https://pixe.la/v1/users"
 USERNAME = "ishanr1"
 TOKEN = "eyvedvqlqeyge2764vdkkdhbdieh"
+# randomly generated 
 GRAPHID = "graph2"
 GRAPH_ENDPOINT = f"https://pixe.la/v1/users/{USERNAME}/graphs/{GRAPHID}/"
 ADD_PIXEL_ENDPOINT = f"{PIXELA_ENDPOINT}/{USERNAME}/graphs/{GRAPHID}"
@@ -47,5 +48,7 @@ headers = {
 # Add a pixel
 response = requests.post(url=ADD_PIXEL_ENDPOINT, json=PIXEL_PARAMS, headers=headers)
 print(response.text)
+
+# a system where users get nnotified every day to record their activity and that gets stored as a pixel 
 
 
