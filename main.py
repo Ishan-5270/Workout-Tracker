@@ -30,7 +30,7 @@ today = dt.now()
 
 PIXEL_PARAMS = {
     "date": today.strftime("%Y%m%d"),
-    "quantity": "9"
+    "quantity": input("How was your workout today? (1-10)")
 }
 
 headers = {
